@@ -1,0 +1,62 @@
+{
+    "name": "mphpmaster/laravel-builder-filter",
+    "description": "Easily build Eloquent queries from API requests",
+    "keywords": [
+        "mphpmaster",
+        "laravel",
+        "query",
+        "builder",
+        "filter"
+    ],
+    "homepage": "https://github.com/mphpmaster/laravel-builder-filter",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/mphpmaster/laravel-builder-filter/issues",
+        "source": "https://github.com/mphpmaster/laravel-builder-filter"
+    },
+    "authors": [
+        {
+            "name": "mPhpMaster",
+            "email": "59211285+mPhpMaster@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/database": "^6.0|^7.0|^8.0",
+        "illuminate/http": "^6.0|^7.0|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "ext-json": "*",
+        "laravel/legacy-factories": "^1.0.4",
+        "orchestra/testbench": "^4.9|^5.8|^6.3",
+        "phpunit/phpunit": "^9.0",
+        "mockery/mockery": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "mPhpMaster\\BuilderFilter\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "mPhpMaster\\BuilderFilter\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "mPhpMaster\\BuilderFilter\\BuilderFilterServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
